@@ -13,9 +13,7 @@ const TWO_FACTOR_API_KEY =
 
 const otpSessions = {};
 
-// ================= API ROUTES =================
 
-// Send OTP or Verify OTP
 app.post("/send-otp", async (req, res) => {
   const { action, phone, otp } = req.body;
 
