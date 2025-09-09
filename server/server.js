@@ -68,13 +68,6 @@ app.post("/send-otp", async (req, res) => {
 });
 
 // ================= SERVE FRONTEND =================
-const buildPath = path.join(__dirname, "../client/build");
-app.use(express.static(buildPath));
-
-// Fallback to React app for all other routes
-app.get(/.*/, (req, res) => {
-  res.sendFile(path.join(buildPath, "index.html"));
-});
 
 
 
