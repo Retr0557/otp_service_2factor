@@ -9,7 +9,7 @@ function SendOTP() {
   const [loading, setLoading] = useState(false);
 
   // API base URL (from environment variable or fallback to localhost for dev)
-  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5001";
+  const API_URL = process.env.REACT_APP_API_URL || "https://otp-service-2factor-qdpu.onrender.com";
 
   const handleSendOtp = async () => {
     if (!phone) {
